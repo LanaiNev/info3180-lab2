@@ -13,10 +13,28 @@ from flask import render_template, request, redirect, url_for, flash
 # Routing for your application.
 ###
 
+import datetime
+
+def format_date_joined(mth, yr):
+    now = datetime.datetime.now() # today's date
+    date_joined = datetime.date(2019, 2, 22) # a specific date
+    ## Format the date to return only month and year date
+    nowjoin = "Joined " + date_joined.strftime("%B, %Y")
+    return nowjoin
+
+
+
 @app.route('/')
 def home():
     """Render website's home page."""
     return render_template('home.html')
+    
+
+@app.route('/profile')
+def profile():
+    """Render website's home page."""
+    joined = format_date_joined(2,2019)
+    return render_template('profile.html', date = joined)
 
 
 @app.route('/about/')

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id = "Pic">
+    <img id = "OvalPic" src = "{{ url_for('static',filename ='img/dixie.jpg')}}"  
+    alt = "Dixie">
+</div>
+
+<div id = "header">
+    <h1>LANAI NEVERS</h1>
+
+</div>
+<div id = "details">
+    <div id = "description">
+        <div class = "username">@Lenty</div> 
+        <div class = "location">Ocho Rios, St. Ann</div> 
+        <div class = "join">{{date}}</div> 
+    </div>
+    
+    <div class = "bio">
+        <p>I am a person who is positive about every aspect of life. There are 
+        many things I like to do, to see, and to experience. The sunrise in the morning is such a bliss, and the 
+        moonlight at night cannot be missed; I like to feel the music flowing 
+        on my face, and smell the wind coming from the ocean's space. </p>
+    </div>
+    
+    <div id = "container">
+        <div class = "item"> 7 </div>
+        <div class = "item"> 100 </div>
+        <div class = "item"> 250 </div>
+    </div>
+    
+    <div id = "FigTitles">
+        <div class = "item">Posts</div>
+        <div class = "item">Following</div>
+        <div class = "item">Followers</div>
+    </div>
+    
+    <button id = "Button">Follow</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block css %}
+
+{% endblock%}

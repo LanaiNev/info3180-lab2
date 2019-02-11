@@ -1,3 +1,72 @@
 body {
     padding-top: 5rem;
+    font-family: Tahoma
+}
+
+#header, #details, #Pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    border: 3px solid #69C5E4;
+    text-align: center;
+    background-color: #69C5E4;
+}
+
+#details{
+    background-color: white;
+}
+
+#OvalPic{
+    background-color: #69C5E4;
+    padding: 5px;
+    border-radius: 95%;
+    height: 200px;
+}
+
+
+#description, #header{
+    background-color: #69C5E4;
+}
+
+
+#description {
+    font-size: medium;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold; 
+}
+
+.bio {
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+#container, #FigTitles{
+  display: flex;
+  justify-content: center;
+}
+
+#container > div, #FigTitles > div {
+  
+  width: 150px;
+  margin: 5px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 15px;
+}
+#container > div{
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+#Button {
+    background-color: #69C5E4;
+    color: white;
+    padding: 12px 28px;
+    position: relative;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 25%;
+    font-weight: bolder;
 }
